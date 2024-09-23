@@ -9,8 +9,12 @@ updates:
     rebase-strategy: auto
     assignees:
       - poad
+    groups:
+      actions:
+        patterns:
+          - "*"
 
-  - package-ecosystem: npm
+  - package-ecosystem: cargo
     directory: '/'
     schedule:
       interval: daily
@@ -21,6 +25,6 @@ updates:
     assignees:
       - poad
     groups:
-      npm:
+      cargo:
         patterns:
           - "*"
